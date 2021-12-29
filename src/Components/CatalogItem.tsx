@@ -21,6 +21,7 @@ export function CatalogItem({ product }: CatalogItemProps) {
       <span>{product.price}</span> {" - "}
       <button
         onClick={handleAddProductToCart}
+        disabled={hasFailedStockCheck}
       >
         Comprar
       </button>
